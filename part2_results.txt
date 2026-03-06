@@ -1,0 +1,114 @@
+# Part 2: Multi-Source RAG with Routing
+# E-Commerce Analytics: CSV Sales Data + Product Text Files
+======================================================================
+
+======================================================================
+Question 1: What was the total revenue for Electronics category in December 2024?
+======================================================================
+
+Route: csv
+Sources Used: csv
+Context Retrieved: 2513 characters
+
+Answer:
+The total revenue for the Electronics category in December 2024 was $142,864.31.
+
+======================================================================
+Question 2: Which region had the highest sales volume?
+======================================================================
+
+Route: csv
+Sources Used: csv
+Context Retrieved: 2518 characters
+
+Answer:
+Based on the total units sold by region, the region with the highest sales volume is **Central** with 6779 units sold.
+
+======================================================================
+Question 3: What are the key features of the Wireless Bluetooth Headphones?
+======================================================================
+
+Route: text
+Sources Used: text
+Context Retrieved: 3227 characters
+
+Answer:
+Based on the provided context, the key features of the Wireless Bluetooth Headphones are:
+
+1. **Active Noise Cancellation (ANC) with transparency mode**: This feature is mentioned in the product description and is a key selling point, as evident from the positive reviews from Sarah M. and Jennifer L.
+2. **Bluetooth 5.2 for stable connectivity up to 30ft range**: This feature is mentioned in the product description and is a key feature of the headphones.
+3. **40-hour battery life, quick charge (10 min = 3 hours playback)**: This feature is mentioned in the product description and is a key selling point, as evident from the positive reviews from Sarah M. and Jennifer L.
+4. **Premium memory foam ear cushions for all-day comfort**: This feature is mentioned in the product description and is a key selling point, as evident from the positive reviews from Sarah M. and Jennifer L.
+5. **Foldable design with carrying case included**: This feature is mentioned in the product description and is a convenient feature for customers.
+6. **Built-in microphone for calls and voice assistant**: This feature is mentioned in the product description and is a useful feature for customers.
+
+These features are supported by the positive reviews from customers, with an average rating of 4.4/5 based on 2,847 reviews.
+
+======================================================================
+Question 4: What do customers say about the Air Fryer's ease of cleaning?
+======================================================================
+
+Route: text
+Sources Used: text
+Context Retrieved: 3306 characters
+
+Answer:
+Based on the customer reviews provided, it appears that customers are generally satisfied with the ease of cleaning the Air Fryer 5.5L. Here are some specific quotes and ratings that support this conclusion:
+
+- Review 3 by Lisa G. (4 stars): "But the food quality is excellent and cleanup is a breeze."
+- Review 1 by Patricia W. (5 stars): "Easy to clean and the presets work perfectly."
+- Review 2 by Robert H. (5 stars): No specific mention of cleaning, but overall satisfaction with the product.
+
+Additionally, the product description and key features mention that the basket and pan are "dishwasher-safe" and "removable," which suggests that cleaning the Air Fryer is relatively easy.
+
+Overall, based on the customer reviews and product features, it seems that customers find the Air Fryer 5.5L easy to clean, with an average rating of 4.6/5 stars and several reviewers specifically mentioning the ease of cleaning as a positive aspect of the product.
+
+======================================================================
+Question 5: Which product has the best customer reviews and how well is it selling?
+======================================================================
+
+Route: both
+Sources Used: csv, text
+Context Retrieved: 2251 characters
+
+Answer:
+Based on the provided context, the product with the best customer reviews is the "Mystery Novel Collection" (BOOK001) with an average rating of 4.6/5 from 2,234 reviews.
+
+As for its sales performance, according to the CSV Sales Data, BOOK001 has sold a total of 42 units on October 3, 2024, in the Central region, and 39 units on the same day in the West region. Additionally, it sold 1 unit on October 3, 2024, in the South region.
+
+Here's a breakdown of BOOK001's sales data:
+
+- Total units sold: 42 (Central) + 39 (West) + 1 (South) = 82 units
+- Total revenue: Not provided in the sample data, but can be calculated by multiplying the units sold by the unit price.
+
+To determine the overall sales performance of BOOK001, we would need to analyze the sales data for the entire date range (October 3 to December 31, 2024). However, based on the provided sample data, it appears that BOOK001 is a popular product with strong customer reviews and decent sales performance.
+
+======================================================================
+Question 6: I want a product for fitness that is highly rated and sells well in the West region. What do you recommend?
+======================================================================
+
+Route: both
+Sources Used: csv, text
+Context Retrieved: 6356 characters
+
+Answer:
+Based on the sales data and product reviews, I recommend the "Running Shoes Men" (product_id: CLTH001) for fitness in the West region.
+
+**Sales Data:**
+The "Running Shoes Men" product has sold 301 units in the West region, generating a total revenue of $27,086.99. This is the second-best-selling product in the West region, after the "Denim Jeans Classic" (product_id: CLTH004).
+
+**Product Reviews:**
+The reviews for the "Running Shoes Men" product are overwhelmingly positive, with an average rating of 4.67 stars out of 5. Reviewers praise the shoes for their comfort, traction, and value for money. One reviewer, Chris L., even used the shoes for a half marathon and reported no blisters or hot spots.
+
+**Key Features:**
+The "Running Shoes Men" product features a responsive foam midsole for energy return, a breathable engineered mesh upper, and a reinforced heel counter for stability. The shoes also have a rubber outsole with a multi-directional traction pattern and reflective details for visibility in low light.
+
+**Recommendation:**
+Based on the sales data and product reviews, I highly recommend the "Running Shoes Men" (product_id: CLTH001) for fitness in the West region. The product has a strong sales record, excellent customer reviews, and features that cater to the needs of runners and fitness enthusiasts.
+
+**Alternative Options:**
+If you're interested in exploring other options, you may also consider the "Denim Jeans Classic" (product_id: CLTH004), which is the best-selling product in the West region. However, please note that this product is not specifically designed for fitness or running.
+
+**Data Sources:**
+The sales data and product reviews were retrieved from the CSV Sales Data and Product Text Files, respectively.
+
